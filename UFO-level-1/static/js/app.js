@@ -1,5 +1,4 @@
 
-
 // from data.js
 var tableData = data;
 
@@ -12,16 +11,9 @@ button.on("click", function() {
 
     var inputValue = inputElement.property("value");
     
-    
-
     var filteredData = tableData.filter(d => d.datetime === inputValue);
-    // function filterDate(dataItem) {
-    //     return dataItem.inputValue;
-    // }
-    // var filteredData = tableData.filter(filterDate);
-
-    var tbody = d3.select("tbody").text(" ");
     
+    var tbody = d3.select("tbody").text(" ");
     
     console.log(filteredData);
 
@@ -34,7 +26,6 @@ button.on("click", function() {
             var cell = row.append("td");
             cell.text(value);
         });
-
         
     });
     
