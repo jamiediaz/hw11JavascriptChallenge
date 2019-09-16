@@ -7,6 +7,7 @@ We need to filter out the data from data.js and append it on the table in the in
 ![](UFO-level-1/static/images/no_filter.png)
 
 This is done by adding an if statement to replace the filtered table with an unfiltered one if the inputvalue equals blank. 
+I needed to remove the place holder from the input tag in index.html for the unflitered to work. 
 
 ![](UFO-level-1/static/images/clear_filter.png)
 
@@ -17,3 +18,17 @@ When a date is entered, it will clean out the currently displayed table and pres
 This is done by adding:  
 
 ![](UFO-level-1/static/images/clear.png)
+
+
+## Level 2
+
+Level 2 is the same website but with multiple filters.  The filters are dependent on the previous filter.  Meaning, if dateValue has a date, then filter the data.  Then filter it further by city, then state, then so forth.  An if statement was added incase the user only wants to filter by city for example.  
+
+![](UFO-level-2/static/images/filter_a_filter.png)
+
+## Issues: 
+nasa.jpg was being called by the styles.css but the image file wasn't included in the homework.  So I just commented out the line in styles.css.  
+
+## Others:
+
+I tried not to use too many shortcuts in the code (i.e. arrow function) because it would be easier for me to understand it later on when I refer back to code.  
