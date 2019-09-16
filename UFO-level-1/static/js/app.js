@@ -12,6 +12,7 @@ button.on("click", function() {
     var inputValue = inputElement.property("value");
     
     var filteredData = tableData.filter(d => d.datetime === inputValue);
+    if (inputValue == "") {filteredData = tableData};
     
     var tbody = d3.select("tbody").text(" ");
     
