@@ -6,10 +6,19 @@ var tableData = data;
 var button = d3.select("#filter-btn");
 
 button.on("click", function() {
-    
+
+    //first select the datetime ID and put it to a variable. 
     var inputDate = d3.select("#datetime");
+
+    // Get the value of id=datetime
     var dateValue = inputDate.property("value");
+
+    // take the value (in this case the date), and use it to filter the data 
+    // in data.js.  
     var filteredDate = tableData.filter(d => d.datetime === dateValue);
+
+    // this checks to see if the input form is left blank.  If blank then no filter.  
+    // use the previous table instead. 
     if (dateValue == ""){filteredDate = tableData};
 
     var inputCity = d3.select("#cityname");
