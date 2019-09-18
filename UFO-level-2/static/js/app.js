@@ -8,13 +8,29 @@ button.on("click", function() {
 
     // trying to turn below into one function -- 
     //
-    // function(id, prevTable, type){
-    // var input1 = d3.select(id);
+    // function filtering(id,prevTable,type){
+    // console.log(type);
+    //     var input1 = d3.select(id);
     // var value = input1.property("value");
-    // var filtered = prevTable.filter(d => d.type === value);
-    // if (value == ""){filtered = prevTable};
-    // return filteredData;
+    // console.log(value);
+
+    
+    // if (value == ""){var filtered = prevTable}
+    // else {    
+    
+    //     var filtered = prevTable.filter(d => d.type === value);
+    //     console.log(filtered);    }
+    // console.log(filtered);
+    // return filtered;
     // };
+
+
+    // filteredDataA = filtering("#datetime", tableData, datetime);
+    // console.log(filteredDataA);
+    // filteredDataB = filtering("#cityname", filteredDataA, city);
+    // filteredDataA = filtering("#statename", filteredDataB, state);
+    // filteredDataB = filtering("#countryname", filteredDataA, country);
+    // filteredDataA = filtering("#shapename", filteredDataB, shape);
 
     //first select the datetime ID and put it to a variable. 
     var inputDate = d3.select("#datetime");
@@ -25,7 +41,7 @@ button.on("click", function() {
     // take the value (in this case the date), and use it to filter the data 
     // in data.js.  
     var filteredDate = tableData.filter(d => d.datetime === dateValue);
-
+    
     // this checks to see if the input form is left blank.  If blank then no filter.  
     // use the previous table instead. 
     if (dateValue == "") { filteredDate = tableData };
@@ -52,17 +68,16 @@ button.on("click", function() {
 
 
 
-
     var tbody = d3.select("tbody").text(" ");
 
-    console.log(filteredShape);
+    
 
     filteredShape.forEach(function(ufoData) {
-        console.log(ufoData);
+    
         var row = tbody.append("tr");
 
         Object.entries(ufoData).forEach(function([key, value]) {
-            console.log(key, value);
+    
             var cell = row.append("td");
             cell.text(value);
         });
