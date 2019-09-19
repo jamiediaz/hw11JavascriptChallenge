@@ -26,6 +26,13 @@ Level 2 is the same website but with multiple filters.  The filters are dependen
 
 ![](UFO-level-2/static/images/filter_a_filter.png)
 
+## Level 3
+
+I too it a step further and created dynamic drop downs to filter the data.  As with the level 2, since I wanted the drop downs to depend on what was selected prior, I had to makde them cascade.  
+![](UFO-level-3/static/images/dropdown.png)
+
+The menus are dynamic and are dependent on that is selected above.  Just like on www.autotrader.com 
+
 ## Issues: 
 nasa.jpg was being called by the styles.css but the image file wasn't included in the homework.  So I just commented out the line in styles.css.  
 
