@@ -19,12 +19,16 @@ This is done by adding:
 
 ![](UFO-level-1/static/images/clear.png)
 
+https://jamiediaz.github.io/hw11JavascriptChallenge/UFO-level-1
+
 
 ## Level 2
 
 Level 2 is the same website but with multiple filters.  The filters are dependent on the previous filter.  Meaning, if dateValue has a date, then filter the data.  Then filter it further by city, then state, then so forth.  An if statement was added incase the user only wants to filter by city for example.  
 
 ![](UFO-level-2/static/images/filter_a_filter.png)
+
+https://jamiediaz.github.io/hw11JavascriptChallenge/UFO-level-2
 
 ## Level 3
 
