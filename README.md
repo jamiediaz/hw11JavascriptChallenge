@@ -35,7 +35,7 @@ The menus are dynamic and are dependent on that is selected above.  Just like on
 
 To help minimize clutter, I created a separate file called functions.js.  Here is where I stored one of the functions.  I was going to attempt to turn the creation of the filtered data and the writing of the drop down menus to a function but I wasn't sure how to syntax it properly.  So I left it be since it is working perfectly right now.  I may go back to it later as I learn more techniques. 
 
-https://jamiediaz.github.io/hw11JavascriptChallenge/
+https://jamiediaz.github.io/hw11JavascriptChallenge/UFO-level-3
 
 ## Issues: 
 nasa.jpg was being called by the styles.css but the image file wasn't included in the homework.  So I just commented out the line in styles.css.  
